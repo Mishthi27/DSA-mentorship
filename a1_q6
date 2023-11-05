@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class a1_q6 {
+    public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int dig=0;
+        while (n/10!=0){
+            
+            dig= dig*10 + (n%10);
+            n=n/10;
+        }
+        if (n/10==0){
+            dig= dig*10 + (n%10);
+        }
+        System.out.println(dig);
+        scn.close();
+}
+}
